@@ -10,6 +10,10 @@ const Header = () => {
     setActiveLink(index);
   };
 
+  const handleLogoClick = () => {
+    setActiveLink(null); // Remove active link when logo is clicked
+  };
+
   const links = [
     { to: '/about', text: 'About Us' },
     { to: '/books', text: 'Books' },
@@ -22,7 +26,7 @@ const Header = () => {
       <div className="container">
         <div className="d-flex align-items-center justify-content-between flex-wrap ">
           <div className='logo'>
-            <Link to="/">
+            <Link to="/" className='logoLink' onClick={handleLogoClick}>
               <img src={logo} alt='Olympia publishers logo' className='img-fluid' />
             </Link>
           </div>
