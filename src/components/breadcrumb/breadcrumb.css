@@ -1,0 +1,9 @@
+.bread__crumb__wrapper {
+    background: #FAF7F6;
+    padding: 103px 0;
+}
+.bread__crumb__wrapper h4 {
+   font-size: 60px;
+   font-family: "Inter", sans-serif;
+   font-optical-sizing: auto;
+}

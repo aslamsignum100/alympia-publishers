@@ -1,0 +1,27 @@
+.books__view__wrapper{
+    gap: 20px;
+}
+.__type__links {
+    flex: .3;
+    padding-right: 30px;
+}
+.links__content {
+    background: #FAF7F6;
+    padding: 45px;
+    border-radius: 5px;
+}
+.links__content li a{
+    color: var(--black-color);
+    font-size: var(--font-size-20);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+.books__main__content{
+    flex: 1;
+}
+.books__page__card {
+    gap: 30px;
+}
+.books__main__content .book__card{
+    width: 300px;
+}

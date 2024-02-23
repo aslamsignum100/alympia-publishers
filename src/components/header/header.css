@@ -1,0 +1,11 @@
+.logo img{
+    width: 200px;
+}
+.header__links li a{
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+nav .header__links li.active a  {
+  border-bottom: 2px solid var(--primary-color);
+}

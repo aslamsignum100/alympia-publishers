@@ -1,0 +1,7 @@
+.hero__wrapper{
+    background-image: url('../../assets/images/home/hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 235px 0;
+    height: 600px;
+}

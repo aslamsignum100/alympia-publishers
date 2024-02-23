@@ -1,0 +1,9 @@
+.top__header {
+  background-color: var(--black-color);
+  padding: 18px 0;
+}
+
+.top__header li {
+  color: #fff;
+  text-transform: uppercase;
+}

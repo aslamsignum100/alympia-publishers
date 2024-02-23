@@ -1,0 +1,9 @@
+.tales__card {
+    background: var(--white-color);
+    border-radius: 5px;
+    max-width: 365px;
+    width: 100%;
+}
+.tales__card h4{
+    font-family: "Inter", sans-serif;
+}

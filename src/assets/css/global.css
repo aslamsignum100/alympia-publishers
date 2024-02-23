@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1400px !important;
+}
+
+:root {
+  --primary-color: #E5262A;
+  --secondary-color: #333333;
+  --black-color: #020303;
+  --white-color: #ffffff;
+  --font-size-20: 20px;
+  --font-size-32: 32px;
+  --font-size-36: 36px;
+  --font-size-60: 50px;
+  --font-size-28: 28px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none;
+}
+
+.customBtn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 0;
+  transition: .5s ease;
+}
+
+.primaryBtn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.primaryBtn:hover {
+  background: var(--secondary-color);
+}
+
+.secondaryBtn {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+.secondaryBtn:hover{
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+.bottomLine {
+  position: relative;
+}
+
+.color__black {
+  color: var(--black-color);
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.font-size-36 {
+  font-size: 28px;
+  font-family: "Inter", sans-serif;
+}
+
+.font-size-32 {
+  font-size: 32px;
+}
+.font-size-28 {
+  font-size: 28px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-60 {
+  font-size: var(--font-size-60);
+}
+
+.bottomLine:after {
+  content: '';
+  border-bottom: 2px solid var(--primary-color);
+  width: 98%;
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.seeBookLink {
+  font-size: var(--font-size-20);
+  color: var(--black-color);
+}
+
+.hero-heading {
+  font-size: var(--font-size-60);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.heading {
+  font-size: var(--font-size-36);
+  color: var(--black-color);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.subheading {
+  font-size: var(--font-size-32);
+  color: var(--black-color);
+}
+
+.paragraph {
+  font-size: var(--font-size-28);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.empty-space {
+  height: 100px;
+}
+
+.bookCard__wrapper {
+  gap: 15px;
+}
+
+.infographic__section {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}

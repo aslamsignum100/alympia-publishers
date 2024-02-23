@@ -1,0 +1,10 @@
+.book__card {
+    width: 260px;
+    transition: .3s ease;
+}
+
+.book__card:hover  {
+    transform: scale(1.05);
+    border-radius: 5px;
+    overflow: hidden;
+}

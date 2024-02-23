@@ -1,0 +1,15 @@
+.footer {
+    background: var(--black-color);
+    padding: 100px 0;
+}
+
+.footer h4 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+.footer ul li a {
+    color: var(--white-color);
+}
+.bottomFooter a, .bottomFooter p{
+    color: #FAF7F699;
+}

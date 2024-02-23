@@ -1,0 +1,92 @@
+@mixin font-weights($weight) {
+    font-weight: $weight;
+}
+
+$font-weight-bolder: 700;
+$font-weight-bold: 600;
+$font-weight-normal: 500;
+$font-weight-thik: 400;
+
+.heading {
+    @include font-weights($font-weight-bolder);
+}
+
+.subheading {
+    @include font-weights($font-weight-bold);
+}
+
+.paragraph {
+    @include font-weights($font-weight-normal);
+}
+
+// Variables
+$primary-color: #E5262A;
+$secondary-color: #333333;
+$black-color: #020303;
+$white-color: #ffffff;
+
+// Mixins
+@mixin reset {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+@mixin typography {
+    html {
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+// Usage
+@include reset;
+@include typography;
+
+.primaryBtn {
+    background-color: $primary-color;
+    color: $white-color;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0;
+    transition: .5s ease;
+
+    &:hover {
+        background: $secondary-color;
+    }
+}
+
+.bottomLine {
+    position: relative;
+
+    &:after {
+        content: '';
+        border-bottom: 2px solid $primary-color;
+        width: 98%;
+        position: absolute;
+        bottom: -2px;
+        right: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.color__black {
+    color: $black-color;
+}
+
+.font-600 {
+    font-weight: 600;
+}

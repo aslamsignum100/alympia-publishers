@@ -1,0 +1,20 @@
+.contactus__page__wrapper ~ .empty-space{
+    display: none;
+}
+.contact__col h4 {
+    font-size: 96px;
+    font-family: "Old Standard TT", serif;
+    margin-bottom: 25px;
+}
+.wrapper__contact__branch_row{
+    padding: 65px 0;
+}
+.wrapper__contact__branch_row:nth-child(even){
+    background: #FAF7F6;
+}
+.wrapper__contact__branch_row:last-child{
+    margin-bottom: 0 !important;
+}
+.contact__col {
+    padding: 0 15px;
+}
