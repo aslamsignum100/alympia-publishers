@@ -18,3 +18,6 @@
 .contact__col {
     padding: 0 15px;
 }
+.contact__col p{
+    word-wrap: break-word;
+}
