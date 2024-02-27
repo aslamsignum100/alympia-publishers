@@ -1,11 +1,25 @@
-.logo img{
-    width: 250px;
+.logo img {
+  width: 250px;
 }
-.header__links li a{
+
+.header__links li a {
   text-transform: uppercase;
   font-weight: 600;
   color: var(--secondary-color);
+  display: inline-block;
 }
-nav .header__links li.active a  {
+
+nav .header__links li.active a {
   border-bottom: 2px solid var(--primary-color);
+}
+
+@media (max-width: 767px) {
+  .navbar-brand img {
+    width: 230px;
+  }
+}
+@media (max-width: 400px) {
+  .navbar-brand img {
+    width: 180px;
+  }
 }

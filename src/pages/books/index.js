@@ -16,11 +16,11 @@ const BooksPage = () => {
           <div className='books__view__wrapper d-flex'>
             <div className='__type__links'>
               <div className='links__content'>
-                <ul className='lists-unstyled mb-0'>
-                  <li className='mb-3'><Link>Fiction</Link></li>
-                  <li className='mb-3'><Link>Non Fiction</Link></li>
-                  <li className='mb-3'><Link>Children's</Link></li>
-                  <li className=''><Link>Coming Soon</Link></li>
+                <ul className='d-flex d-lg-block overflow-auto py-2 py-md-0 lists-unstyled mb-0'>
+                  <li className='mb-0 mb-lg-3 mr-3 mr-lg-0'><Link class="text-nowrap">Fiction</Link></li>
+                  <li className='mb-0 mb-lg-3 mr-3 mr-lg-0'><Link class="text-nowrap">Non Fiction</Link></li>
+                  <li className='mb-0 mb-lg-3 mr-3 mr-lg-0'><Link class="text-nowrap">Children's</Link></li>
+                  <li className='text-nowrap'><Link>Coming Soon</Link></li>
                 </ul>
               </div>
             </div>

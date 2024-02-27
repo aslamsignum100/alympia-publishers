@@ -25,3 +25,18 @@
 .books__main__content .book__card{
     width: 300px;
 }
+
+@media (max-width: 1024px){
+    .books__view__wrapper{
+        flex-direction: column;
+    }
+    .links__content{
+        padding: 25px;
+    }
+}
+@media (max-width: 992px){
+    
+    .__type__links{
+        padding: 0;
+    }
+}

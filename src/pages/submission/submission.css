@@ -1,0 +1,13 @@
+.submit__work__col {
+    padding: 55px 30px 55px 55px;
+}
+
+.work__submitted__section img {
+    width: 126px;
+}
+
+@media (max-width: 992px) {
+    .submit__work__col {
+        padding: 25px;
+    }
+}

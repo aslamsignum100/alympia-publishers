@@ -7,3 +7,9 @@
 .tales__card h4{
     font-family: "Inter", sans-serif;
 }
+
+@media (max-width: 992px){
+    .tales__card{
+        width: max-content;
+    }
+}

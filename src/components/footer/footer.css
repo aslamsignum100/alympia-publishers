@@ -13,3 +13,10 @@
 .bottomFooter a, .bottomFooter p{
     color: #FAF7F699;
 }
+
+@media (max-width: 992px){
+    .footer {
+        padding: 40px 0;
+    }
+    
+}

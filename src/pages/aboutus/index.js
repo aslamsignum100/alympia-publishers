@@ -17,7 +17,7 @@ const AboutUsPage = () => {
       <section className='__welcome__section'>
         <div className='container'>
           <div className='row align-items-center'>
-            <div className='col-md-6'>
+            <div className='col-md-6 mb-4 mb-md-0'>
               <h3 className='subheading font-700 mb-3 '>Welcome to Olympia Publishers</h3>
               <p className='paragraph mb-0 '>
                 Dubai is our next stop to expand our extensive<br /> knowledge and service of the publishing world.<br /> Publishing with us guarantees you a tailored<br /> service and a five star experience from start to<br /> finish. With an increased number of UAE authors,<br /> we have decided to create this bespoke platform <br />to promote our authors and give them the highest<br /> chance of success.
@@ -44,16 +44,17 @@ const AboutUsPage = () => {
             return (
               <>
                 <div className="empty-space"></div>
-                <div className={`row ${index % 2 === 0 ? '' : 'flex-row-reverse'}`} key={data.id}>
-                  <div className='col-md-6'>
-                    <img src={data.img} alt="dummy" className='img-fluid' />
-                  </div>
-                  <div className='col-md-6'>
+                <div className={`row ${index % 2 === 0 ? 'flex-row-reverse' : ''}`} key={data.id}>
+                  <div className='col-md-6 mb-4 mb-md-0'>
                     <h3 className='subheading font-700 mb-3'>{data.heading}</h3>
                     <p className='paragraph mb-0'>
                       {data.content}
                     </p>
                   </div>
+                  <div className='col-md-6'>
+                    <img src={data.img} alt="dummy" className='img-fluid' />
+                  </div>
+
                 </div>
               </>
             )
@@ -84,7 +85,7 @@ const AboutUsPage = () => {
               <figcaption>
                 <img src={imgRamadanReads} alt='ramada reads' className='img-fluid' />
               </figcaption>
-              <TalesCard heading="PUBLISHING PROCESS" btnText="Read More"/>
+              <TalesCard heading="PUBLISHING PROCESS" btnText="Read More" />
             </div>
           </div>
           <div className="col-md-6">
@@ -92,7 +93,7 @@ const AboutUsPage = () => {
               <figcaption>
                 <img src={imgSarahSmith} alt='ramada reads' className='img-fluid' />
               </figcaption>
-               <TalesCard heading="5 STAR REVIEWS" btnText="Read More"/>
+              <TalesCard heading="5 STAR REVIEWS" btnText="Read More" />
             </div>
           </div>
         </div>

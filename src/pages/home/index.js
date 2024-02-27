@@ -45,7 +45,7 @@ const HomePage = () => {
       </section>
       <div className="empty-space"></div>
       <section className="container">
-        <h3 className="heading text-center font-700 mb-5">NEW RELEASES</h3>
+        <h3 className="heading text-center font-700 mb-3 mb-md-4 mb-lg-5">NEW RELEASES</h3>
         <div className="d-flex flex-wrap justify-content-center new__release__books bookCard__wrapper">
           {
             booksData.newReleaseBooks && booksData.newReleaseBooks.map((books) => {
@@ -62,7 +62,7 @@ const HomePage = () => {
 
       <div className="empty-space"></div>
       <section className="container">
-        <h3 className="heading text-center font-700 mb-5">BOOKS FOR YOUNG READERS</h3>
+        <h3 className="heading text-center font-700 mb-3 mb-md-4 mb-lg-5">BOOKS FOR YOUNG READERS</h3>
         <div className="d-flex flex-wrap justify-content-center new__release__books bookCard__wrapper">
           {
             booksData.yangReadersBooks && booksData.yangReadersBooks.map((books) => {

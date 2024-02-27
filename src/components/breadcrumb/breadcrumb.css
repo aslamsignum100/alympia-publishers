@@ -7,3 +7,13 @@
    font-family: "Inter", sans-serif;
    font-optical-sizing: auto;
 }
+
+@media (max-width: 992px){
+.bread__crumb__wrapper h4 {
+    font-size: 45px;
+ }
+ 
+ .bread__crumb__wrapper {
+    padding: 60px 0;
+}
+}

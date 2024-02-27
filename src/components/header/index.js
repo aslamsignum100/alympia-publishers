@@ -1,33 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 import '../header/header.css';
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [showMenu, setShowMenu] = useState(windowWidth >= 992);
+  const [showMenu, setShowMenu] = useState(false);
 
   const handleLinkClick = (index) => {
     setActiveLink(index);
+    setShowMenu(false); // Close the menu after clicking a link
   };
 
   const handleLogoClick = () => {
     setActiveLink(null); // Remove active link when logo is clicked
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-      setShowMenu(window.innerWidth >= 992);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   const links = [
     { to: '/about', text: 'About Us' },
@@ -37,39 +28,34 @@ const Header = () => {
   ];
 
   return (
-    <nav className='py-5'>
-      <div className="container">
-        <div className="d-flex align-items-center justify-content-between flex-wrap ">
-          <div className='logo'>
-            <Link to="/" className='logoLink' onClick={handleLogoClick}>
-              <img src={logo} alt='Olympia publishers logo' className='img-fluid' />
-            </Link>
+    <>
+      <div className='container'>
+        <nav className='alympia__publishers__nav navbar navbar-expand-lg py-3 py-md-4 py-lg-5 justify-content-between px-0'>
+          <Link to='/' className='navbar-brand' onClick={handleLogoClick}>
+            <img src={logo} alt='Olympia publishers logo' className='img-fluid' />
+          </Link>
+          <button className='navbar-toggler' type='button' onClick={toggleMenu}>
+            ☰
+          </button>
+          <div className={`header__links collapse navbar-collapse ${showMenu ? 'show' : ''}`}>
+            <ul className='navbar-nav align-items-lg-center ml-auto mt-4 mt-lg-0 mt-0'>
+              {links.map((link, index) => (
+                <li className={`nav-item mr-lg-5 mb-lg-0 mb-3 ${activeLink === index ? 'active' : ''}`} key={index}>
+                  <Link to={link.to} className='nav-link p-0' onClick={() => handleLinkClick(index)}>
+                    {link.text}
+                  </Link>
+                </li>
+              ))}
+              <li className='nav-item'>
+                <Link to="/submission" className='primaryBtn customBtn text-white'>SUBMISSIONS</Link>
+              </li>
+            </ul>
           </div>
-          {showMenu ? (
-            <div className="header__links">
-              <ul className='list-inline list-unstyled m-0 d-flex align-items-center'>
-                {links.map((link, index) => (
-                  <li
-                    key={index}
-                    className={`list-inline-item pr-4 ${activeLink === index ? 'active' : ''}`}
-                    onClick={() => handleLinkClick(index)}
-                  >
-                    <Link to={link.to}>{link.text}</Link>
-                  </li>
-                ))}
-                <li className="list-inline-item"><button className="primaryBtn customBtn">SUBMISSIONS</button></li>
-              </ul>
-            </div>
-          ) : (
-            <div className="header__links--mobile">
-              <button className="hamburger-icon">☰</button>
-              {/* Dropdown menu can be implemented here */}
-            </div>
-          )}
-        </div>
+        </nav>
       </div>
-    </nav>
-  )
-}
+
+    </>
+  );
+};
 
 export default Header;

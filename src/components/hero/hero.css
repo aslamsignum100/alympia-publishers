@@ -5,3 +5,19 @@
     padding: 235px 0;
     height: 600px;
 }
+.hero__wrapper .tales__card {
+    position: initial !important;
+}
+
+@media (max-width: 992px){
+    .hero__wrapper{
+        padding:  0;
+        height: 400px;
+    }
+}
+
+@media (max-width: 575px){
+    .hero__wrapper{
+        height: 300px;
+    }
+}
