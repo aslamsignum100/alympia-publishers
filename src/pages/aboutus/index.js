@@ -64,7 +64,7 @@ const AboutUsPage = () => {
       </section>
       <div className="empty-space"></div>
       <section className="container">
-        <div className="infographic__section py-5 text-center ">
+        <div className="infographic__section px-3 py-5 text-center ">
           <h3 className='subheading font-700 mb-3 text-white'>Start your publishing journey with us</h3>
           <p className='paragraph text-white'>
             Whether you want to share your story with the world or leave a legacy for<br /> generations to come, our exceptional team will take care of your book from the<br /> beginning with unparalleled publishing service. We work tirelessly to deliver<br />

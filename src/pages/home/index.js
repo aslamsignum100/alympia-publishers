@@ -79,7 +79,7 @@ const HomePage = () => {
 
       <div className="empty-space"></div>
       <section className="container">
-        <div className="infographic__section py-5">
+        <div className=" px-3 py-5">
           <h3 className="text-center font-700 font-size-36  py-5">SUBMIT ONLINE INFOGRAPHIC TO GO HERE</h3>
         </div>
         <div className="infogrpahic__img text-center">
@@ -95,7 +95,7 @@ const HomePage = () => {
         <p className='font-size-20'>
           Premium experience and rewarding publishing journey, lorum ipsum dipsum
         </p>
-        <div className="emirate__publishers mt-5 pt-5">
+        <div className="emirate__publishers mt-0 mt-md-5 pt-5">
           <img src={emiratePublishersImg} className='img-fluid' alt="info grpahic" />
         </div>
       </section>
