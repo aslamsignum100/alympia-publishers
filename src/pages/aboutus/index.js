@@ -3,8 +3,10 @@ import '../aboutus/about.css'
 import '../../components/talescard/talescard.css'
 import BreadCrumb from '../../components/breadcrumb'
 import dummyImg from "../../assets/images/about/dummy-image.png"
-import imgRamadanReads from '../../assets/images/home/ramadan-reads.png'
-import imgSarahSmith from '../../assets/images/home/sarah.png'
+import publishingProcessImg from '../../assets/images/about/ab1.jpg'
+import reviewImg from '../../assets/images/about/ab2.jpg'
+import bumbleBookImg from '../../assets/images/about/ab3.jpg'
+import arabicEnglishImg from '../../assets/images/about/ab4.jpg'
 import aboutUsContentData from '../../data/aboutUsContentData'
 import TalesCard from '../../components/talescard'
 
@@ -80,10 +82,10 @@ const AboutUsPage = () => {
       <div className="empty-space"></div>
       <section className="container">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 mb-4 mb-md-0">
             <div className='ramada__reads position-relative'>
               <figcaption>
-                <img src={imgRamadanReads} alt='ramada reads' className='img-fluid' />
+                <img src={publishingProcessImg} alt='publishingProcessImg' className='img-fluid' />
               </figcaption>
               <TalesCard heading="PUBLISHING PROCESS" btnText="Read More" />
             </div>
@@ -91,7 +93,7 @@ const AboutUsPage = () => {
           <div className="col-md-6">
             <div className='ramada__reads position-relative'>
               <figcaption>
-                <img src={imgSarahSmith} alt='ramada reads' className='img-fluid' />
+                <img src={reviewImg} alt='ramada reads' className='img-fluid' />
               </figcaption>
               <TalesCard heading="5 STAR REVIEWS" btnText="Read More" />
             </div>
