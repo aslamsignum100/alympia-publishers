@@ -79,7 +79,7 @@ const HomePage = () => {
 
       <div className="empty-space"></div>
       <section className="container">
-        <div className=" px-3 py-5">
+        <div className="infographic__section px-3 py-5">
           <h3 className="text-center font-700 font-size-36  py-5">SUBMIT ONLINE INFOGRAPHIC TO GO HERE</h3>
         </div>
         <div className="infogrpahic__img text-center">
