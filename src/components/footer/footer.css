@@ -6,9 +6,11 @@
 .footer h4 {
     color: var(--primary-color);
     text-transform: uppercase;
+    font-weight: 400;
 }
 .footer ul li a {
     color: var(--white-color);
+    font-weight: 600;
 }
 .bottomFooter a, .bottomFooter p{
     color: #FAF7F699;
@@ -18,5 +20,4 @@
     .footer {
         padding: 40px 0;
     }
-    
 }

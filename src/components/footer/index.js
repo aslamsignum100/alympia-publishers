@@ -10,7 +10,7 @@ const Footer = () => {
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-              <h4 class="font-size-20 mb-2 mb-lg-4 font-600">OLYMPIA PUBLISHERS</h4>
+              <h4 class="font-size-20 mb-2 mb-lg-4">OLYMPIA PUBLISHERS</h4>
               <ul class="mb-0 list-unstyled">
                 <li class="mb-2 mb-lg-4"><Link>ABOUT US</Link></li>
                 <li class="mb-2 mb-lg-4"><Link>AUTHORS</Link></li>
@@ -19,7 +19,7 @@ const Footer = () => {
               </ul>
             </div>
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-              <h4 class="font-size-20 mb-2 mb-lg-4 font-600">ACCEPTING SUBMISSIONS</h4>
+              <h4 class="font-size-20 mb-2 mb-lg-4">ACCEPTING SUBMISSIONS</h4>
               <ul class="mb-0 list-unstyled">
                 <li class="mb-2 mb-lg-4"><Link>SUBMISSIONS</Link></li>
                 <li class="mb-2 mb-lg-4"><Link>OUR PUBLISHING PROCESS</Link></li>
@@ -27,7 +27,7 @@ const Footer = () => {
               </ul>
             </div>
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-              <h4 class="font-size-20 mb-2 mb-lg-4 font-600">OUR LOCATIONS</h4>
+              <h4 class="font-size-20 mb-2 mb-lg-4">OUR LOCATIONS</h4>
               <ul class="mb-0 list-unstyled">
                 <li class="mb-2 mb-lg-4"><Link>LONDON</Link></li>
                 <li class="mb-2 mb-lg-4"><Link>NEW YORK</Link></li>
@@ -36,8 +36,8 @@ const Footer = () => {
               </ul>
             </div>
             <div class="col-md-6 col-lg-3 ">
-              <h4 class="font-size-20 mb-2 mb-lg-4 font-600">FOLLOW OLYMPIA PUBLISHERS</h4>
-              <h4 class="font-size-20 mb-2 mb-lg-4 font-600">FOLLOW BUMBLEBEE BOOKS</h4>
+              <h4 class="font-size-20 mb-2 mb-lg-4">FOLLOW OLYMPIA PUBLISHERS</h4>
+              <h4 class="font-size-20 mb-2 mb-lg-4">FOLLOW BUMBLEBEE BOOKS</h4>
             </div>
           </div>
           <div className="empty-space"></div>
