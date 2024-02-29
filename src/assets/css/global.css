@@ -220,10 +220,14 @@ li {
   .paragraph br{
   display: none;
   }
+  .breakLine br{
+    display: none;
+  }  
 }
 @media (max-width: 767px){
   .customBtn{
     padding: 10px 15px;
   }
+ 
 }
 

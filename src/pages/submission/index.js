@@ -11,19 +11,19 @@ const SubmissionPage = () => {
             <BreadCrumb heading="Submissions" />
             <div className="empty-space"></div>
             <div className='container'>
-                <section className='submission__procedure inner__container__space'>
+                <section className='submission__procedure inner__container__space breakLine'>
                     <div className='row'>
                         <div className='col-lg-6'>
                             <div className='procedures__'>
                                 <h3 class="subheading font-700 mb-3 ">Submitting your work</h3>
                                 <p className='paragraph mb-2 mb-md-3 mb-lg-4'>
-                                    We consider submissions from a wide range of genres, both fiction, non-fiction and children’s.
+                                    We consider submissions from a wide range of <br/>genres, both fiction, non-fiction and children’s.
                                 </p>
                                 <p className='paragraph mb-2 mb-md-3 mb-lg-4'>
-                                    We <strong>do not</strong> accept academic works, sheet music, joke books or foreign language books.
+                                    We <strong>do not</strong> accept academic works, sheet<br/> music, joke books or foreign language books.
                                 </p>
                                 <p className='paragraph mb-2 mb-md-3 mb-lg-4'>
-                                    If you haven’t yet finished the work but would like to know if it would be something we are interested in before completing then you are also welcome to send samples of the manuscript to us by email.
+                                    If you haven’t yet finished the work but would <br/>like to know if it would be something we are <br/> interested in before completing then you are <br/>also welcome to send samples of <br/>the manuscript to us by email.
                                 </p>
                                 <p className='paragraph'>
                                     We accept work with or without an agent.
@@ -33,7 +33,7 @@ const SubmissionPage = () => {
                             <div className='procedures__ mt-2 mt-md-3 mt-lg-5'>
                                 <h3 class="subheading font-700 mb-2 mb-md-3 ">Arabic & English</h3>
                                 <p className='paragraph mb-4'>
-                                    We accept submissions in both Arabic and English language.
+                                    We accept submissions in both Arabic and <br/>English language.
                                 </p>
                             </div>
                         </div>
@@ -42,7 +42,7 @@ const SubmissionPage = () => {
                             <div className='procedures__'>
                                 <h3 class="subheading font-700 mb-3 ">Submitting poetry</h3>
                                 <p className='paragraph  mb-2 mb-md-3 mb-lg-4'>
-                                    We require 5 poems as a sample and then if they pass the initial review, we would request at least 25 to make a collection. The minimum word count is 10,000 words or 20 pages with illustrations.
+                                    We require 5 poems as a sample and then if<br/> they pass the initial review, we would request <br/>at least 25 to make a collection. The minimum word count is 10,000 words or 20 pages with illustrations.
                                 </p>
                             </div>
 
@@ -50,18 +50,18 @@ const SubmissionPage = () => {
                                 <h3 class="subheading font-700 mb-3 ">Publishing contract</h3>
                                 <p className='paragraph  mb-2 mb-md-3 mb-lg-4'>
                                     <span className='color__red'>Hybrid publishing contract</span><br />
-                                    This offer is based on a contribution, to be paid by the author, to cover initial production and printing of the work. Marketing costs are incurred by us as your publisher.
+                                    This offer is based on a contribution, to be paid by the<br/> author, to cover initial production <br/>and printing of the work. Marketing costs are incurred by us as your publisher.
                                 </p>
 
                                 <p className='paragraph  mb-2 mb-md-3 mb-lg-4'>
                                     <span className='color__red'>Traditional contract</span><br />
-                                    This is where no costs are incurred by the author and the whole cost for producing, publishing and marketing the work is covered by us.
+                                    This is where no costs are incurred by the <br/>author and the whole cost for producing,<br/> publishing and marketing the work is covered by us.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section className='submission__procedure mt-5'>
+                <section className='submission__procedure mt-5 breakLine'>
                     <h3 class="subheading font-700 mb-5 text-center">How to submit your work?</h3>
                     <div className='row'>
                         <div className='col-lg-6 d-flex'>
@@ -93,7 +93,7 @@ const SubmissionPage = () => {
                         </div>
                     </div>
                 </section>
-                <section className='submission__procedure mt-5 work__submitted__section'>
+                <section className='submission__procedure mt-5 work__submitted__section breakLine'>
                     <h3 class="subheading font-700 text-center mb-5">What happens after work is submitted?</h3>
                     <div className='row m-0'>
                         <div className='col-lg-6 d-flex p-0 color__gray'>
