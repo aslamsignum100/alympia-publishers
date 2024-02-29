@@ -3,12 +3,14 @@ import '../books/books.css';
 import BreadCrumb from '../../components/breadcrumb';
 import BooksCard from '../../components/bookscard';
 import { Link } from 'react-router-dom';
-import fetchBooks from '../../services/apiService'; 
+import fetchBooks from '../../services/apiService';
 import SpinnerLoader from '../../components/spinner';
+import Pages from '../../components/pagination';
+import { usePagination } from '../../customHooks/usePagination';
 
 const BooksPage = () => {
   const [books, setBooks] = useState();
- const [spinner, setSpinner] = useState(true)
+  const [spinner, setSpinner] = useState(true)
 
   useEffect(() => {
     const loadBooks = async () => {
@@ -24,6 +26,7 @@ const BooksPage = () => {
       const bookByGenre = await fetchBooks(genre);
       setBooks(bookByGenre);
       setSpinner(false)
+
     } catch (error) {
       console.error("Error filtering books by genre:", error);
     }
@@ -55,19 +58,21 @@ const BooksPage = () => {
               </div>
             </div>
             <div className='books__main__content'>
-              <div className='books__page__card d-flex flex-wrap'>
+              <div className='books__page__card d-flex justify-content-center flex-wrap'>
                 {
                   spinner ? (
-                   <SpinnerLoader/>
-                  ):
-                  (
-                    books && books.map((book) => (
-                      <BooksCard data={book} key={book.id} />
-                    ))
-                  )
+                    <SpinnerLoader />
+                  ) :
+                    (
+                      books.map((book) => {
+                        return (
+                          <BooksCard key={book.id} data={book} />
+                        )
+                      })
+                    )
                 }
-                
               </div>
+              <Pages data={books}/>
             </div>
           </div>
         </div>

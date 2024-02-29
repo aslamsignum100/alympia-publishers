@@ -1,0 +1,25 @@
+.pagination__wrapper {
+    background-color: var(--gray-color);
+    border-radius: 5px;
+    max-width: 90%;
+}
+
+.pagination__wrapper .page-item.active .page-link {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.pagination__wrapper .page-link {
+    background: transparent;
+    color: var(--black-color);
+    border: transparent;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .pagination__wrapper {
+        max-width: 100%;
+    }
+}

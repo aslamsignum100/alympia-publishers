@@ -23,7 +23,7 @@
     gap: 30px;
 }
 .books__main__content .book__card{
-    width: 300px;
+    /* width: 300px; */
 }
 
 @media (max-width: 1024px){
