@@ -12,7 +12,13 @@ html {
 }
 
 .container {
-  max-width: 1450px !important;
+  max-width: 1720px !important;
+}
+
+.inner__container__space {
+  max-width: 1620px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 :root {
@@ -40,7 +46,7 @@ li {
 }
 
 .customBtn {
-  padding: 10px 15px;
+  padding: 20px 35px;
   border-radius: 5px;
   border: 0;
   transition: .5s ease;
@@ -87,12 +93,12 @@ li {
 }
 
 .font-size-36 {
-  font-size: 28px;
+  font-size: var(--font-size-36);
   font-family: "Inter", sans-serif;
 }
 
 .font-size-32 {
-  font-size: 32px;
+  font-size: var(--font-size-32);
 }
 
 .font-size-28 {
@@ -109,10 +115,10 @@ li {
 
 .bottomLine:after {
   content: '';
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
   width: 98%;
   position: absolute;
-  bottom: -2px;
+  bottom: -7px;
   right: 0;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -167,6 +173,11 @@ li {
   font-optical-sizing: auto;
 }
 
+@media (max-width: 1024px){
+  .inner__container__space{
+    max-width: 100%;
+  }
+}
 @media (max-width: 992px) {
   :root {
     --font-size-20: 16px;
