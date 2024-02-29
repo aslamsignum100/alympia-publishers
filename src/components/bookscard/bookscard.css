@@ -1,10 +1,22 @@
 .book__card {
-    width: 260px;
+    width: 356px;
     transition: .3s ease;
 }
 
-.book__card:hover  {
+.book__card:hover {
     transform: scale(1.05);
     border-radius: 5px;
     overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .book__card {
+        width: 200px;
+    }
+}
+
+@media (max-width: 475px) {
+    .book__card {
+        width: max-content;
+    }
 }

@@ -7,3 +7,10 @@
   color: #fff;
   text-transform: uppercase;
 }
+
+@media (max-width: 767px)
+{
+  .top__header{
+    padding: 10px 0;
+  }
+}

@@ -1,10 +1,13 @@
-.ramada__reads .tales__card{
-    bottom: 20px;
-    left: 25px;
+.ramada__reads .tales__card {
+    bottom: 45px;
+    left: 45px;
 }
-
 @media (max-width: 992px){
     .welcome__note br{
         display: none;
+    }
+    .ramada__reads .tales__card {
+        bottom: 20px;
+        left: 20px;
     }
 }

@@ -25,7 +25,7 @@ const HomePage = () => {
         </p>
         <div className="empty-space"></div>
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 mb-4 mb-md-0">
             <div className='ramada__reads position-relative'>
               <figcaption>
                 <img src={imgRamadanReads} alt='ramada reads' className='img-fluid' />
